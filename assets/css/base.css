@@ -25,9 +25,10 @@ ul, li {
 }
 
 :root {
-    --primary: #e9aa24;
+    --primary: rgb(233, 170, 36);
     --secondary: #073a6f;
     --opacity: 0.7;
+    --text-color: #2d2a24;
     --fs-13: 0.8125rem;
     --fs-14: 0.875rem;
     --fs-15: 0.9375rem;
@@ -42,6 +43,7 @@ ul, li {
 
 .btn {
     border-radius: 5px;
+    min-width: 6.25rem;
     padding: 0.75rem 1rem;
     cursor: pointer;
     border: none;
@@ -50,4 +52,38 @@ ul, li {
 
 .btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.row-content {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+
+}
+
+.column-4 {
+    width: calc(100%/3);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.column-6 {
+    width: 50%;
+}
+
+.column-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.column-7 {
+    width: calc((100% / 12) * 7);
 }
