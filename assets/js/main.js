@@ -7,7 +7,9 @@ let contentFooter = document.querySelector("footer .footer-content");
 
 btnMenu.addEventListener("click", () =>{
     currentMenu.classList.toggle("open");
-    loginBtn.classList.toggle("show");
+    if (document.querySelector("header").clientWidth < 768 ){
+        loginBtn.classList.toggle("show");
+    }
 })
 
 btnFooter.addEventListener("click", () => {
