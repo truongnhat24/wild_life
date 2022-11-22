@@ -1,10 +1,15 @@
 // Open & close header menu 
 let btnMenu = document.querySelector("header nav .btn-menu");
+let btnFooter = document.querySelector("footer .btn-footer");
 let currentMenu = document.querySelector("header nav .menu");
+let loginBtn = document.querySelector("header nav .btn-group");
+let contentFooter = document.querySelector("footer .footer-content");
 
 btnMenu.addEventListener("click", () =>{
-    // if (currentMenu.style.display === "none") {
-    //     currentMenu.style.display = "flex";
-    // } else currentMenu.style.display = "none";
     currentMenu.classList.toggle("open");
+    loginBtn.classList.toggle("show");
+})
+
+btnFooter.addEventListener("click", () => {
+    contentFooter.classList.toggle("show");
 })

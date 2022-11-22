@@ -7,22 +7,78 @@
         margin-bottom: 0.25rem;
     }
 
-    header .btn-group {
-        display: flex;
-        flex-direction: column;
+    header .btn-group .btn-login {
+        margin-bottom: 0.25rem;
     }
 
-    header .btn-group .btn-login {
+    header .btn-group {
+        display: none;
+        flex-direction: column;
+    }    
+
+    header .btn-group .btn-signup {
+        margin-left: 0;
+    }
+
+    main {
+        padding-top: 5rem;
+    }
+
+    .infor-list > div > img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    main .animal  div.column-full {
+        width: 100%;
+        margin-bottom: 1.25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infor .prize,
+    .infor .infor-detail {
+        width: 100%;
+        border: none;
+    }
+
+    .infor .infor-header,
+    .infor .infor-content  {
+        flex-wrap: wrap;
+    }
+
+    .row .infor-list {
+        width: 100%;
+    }
+
+    footer .footer-content {
+        display: none;
+    }
+
+    footer .footer-content.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .footer-content.show > * {
+        margin-top: 0.25rem;
         margin-bottom: 0.25rem;
     }
 }
 
-@media only screen and (min-width: 576px) {
-
+@media only screen and (min-width: 768px) {
+    footer .btn-footer {
+        display: none;
+    }    
 }
 
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    main .animal  div.column-full {
+        width: calc(100%/12 *8);
+        margin-bottom: 1.25rem;
+    }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -49,9 +105,3 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
-}
-
-@media only screen and (min-width: 1320px) {
-    
-}

@@ -7,8 +7,8 @@ body {
 /* Start header */
 
 header {
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     background-color: #fff;
     padding: 0.75rem 0;
     width: 100%;
@@ -69,6 +69,10 @@ nav .menu li a:hover {
     color: #fff;
 }
 
+header .btn-group.show {
+    display: flex;
+}
+
 nav .btn-login {
     background-color: var(--primary);
 }
@@ -79,6 +83,7 @@ nav .btn-login:hover {
 
 nav .btn-signup {
     background-color: var(--secondary);
+    margin-left: 0.25rem;
 }
 
 nav .btn-signup:hover {
@@ -91,7 +96,7 @@ nav .btn-signup:hover {
 
 /* ** Start animal */
 main {
-    margin-top: 4rem;
+    margin-top: 1.5rem;
 }
 
 main .animal .column-4 {
@@ -318,11 +323,14 @@ footer .more {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 100%;
 }
 
 footer .more li {
     height: 100%;
+    /* width: 100%; */
 }
 
 .more li a {
@@ -332,10 +340,17 @@ footer .more li {
     font-weight: 600;
     color: #fff;
     height: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .more li a:hover {
     background-color: rgb(30, 114, 179);
+}
+
+footer .btn-footer {
+    width: 100%;
+    background-color: var(--primary);
 }
 
 /* End footer */

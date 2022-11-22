@@ -61,6 +61,7 @@ ul, li {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row {
