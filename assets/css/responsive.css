@@ -1,21 +1,4 @@
 @media only screen and (max-width: 575.98px) {
-    header nav.container {
-        flex-direction: column;
-    }
-
-    header .list-menu .btn-menu {
-        margin-bottom: 0.25rem;
-    }
-
-    header .btn-group .btn-login {
-        margin-bottom: 0.25rem;
-    }
-
-    header .btn-group {
-        display: none;
-        flex-direction: column;
-    }    
-
     header .btn-group .btn-signup {
         margin-left: 0;
     }
@@ -40,12 +23,15 @@
     .infor .prize,
     .infor .infor-detail {
         width: 100%;
+        padding-left: 0;
         border: none;
     }
 
     .infor .infor-header,
     .infor .infor-content  {
         flex-wrap: wrap;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .row .infor-list {
@@ -54,26 +40,6 @@
         padding-bottom: 0;
     }
 
-    footer .footer-content {
-        display: none;
-    }
-
-    footer .footer-content.show {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    footer .footer-content.show > * {
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    footer .btn-footer {
-        display: none;
-    }    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -95,6 +61,10 @@
     header nav .menu {
         display: flex;
     }
+
+    .btn {
+        min-width: 6.25rem;
+    }
     
     nav .list-menu .btn-menu {
         display: none;
@@ -107,3 +77,8 @@
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    footer .footer-content {
+        justify-content: space-between;
+    }
+}
